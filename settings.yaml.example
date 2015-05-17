@@ -1,0 +1,8 @@
+# Array of paths to scrape for updates (must begin with a forward slash)
+paths:
+  - /manga/783_magician-(kim-sarae)
+
+# PushBullet notification settings
+pushbullet:
+  # You can find your Access Token at https://www.pushbullet.com/account
+  api_key: my-secret-api-key
