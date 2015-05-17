@@ -33,7 +33,7 @@ data = if fs.existsSync dataFile
 
 
 # Set up the request for each path
-for path in settings.paths
+settings.paths.map (path) ->
   request = http.request {host, path}, (response) ->
     bytes = ''
     response.on 'data', (chunk) -> bytes += chunk
