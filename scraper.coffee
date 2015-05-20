@@ -56,7 +56,7 @@ checkChapters = (path, html) ->
   if data[path].chapters < chapters.length
     # Prepare the push notification
     chapter = chapters.last()
-    url     = chapter.attr('href')
+    url     = "http://reader.blakeharley.com/q?url=" + chapter.attr('href')
     title   = chapter.text()
 
     # Send it off
