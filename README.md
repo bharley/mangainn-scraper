@@ -19,14 +19,10 @@ You can also run this in a Docker container:
 
     $ wget -O settings.yaml https://raw.githubusercontent.com/bharley/mangainn-scraper/master/settings.yaml.example
     ... make the proper changes to settings.yaml using your editor of choice
-    $ docker create \
-        -v /opt/scraper/.data.json \
-        --name scraper-data \
-        bharley/mangainn-scraper \
-        /bin/true
+    $ touch .data.json
     $ docker run \
-        -v "settings.yaml:/opt/scraper/settings.yaml" \
-        --volumes-from scraper-data \
+        -v "$(pwd)/settings.yaml:/opt/scraper/settings.yaml" \
+        -v "$(pwd)/.data.json:/opt/scraper/.data.json" \
         --restart=always \
         bharley/mangainn-scraper
 
