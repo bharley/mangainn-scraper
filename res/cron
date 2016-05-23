@@ -1,1 +1,1 @@
-*/30 * * * * root cd /opt/scraper && /usr/bin/npm start > /dev/null 2>&1
+0 */2 * * * root sleep $(expr $RANDOM \% 1800) && cd /opt/scraper && /usr/bin/npm start > /dev/null 2>&1
