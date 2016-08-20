@@ -21,7 +21,7 @@ catch e
 
 # Set up some variables
 dataFile = '.data.json'
-host     = 'www.mangainn.me'
+host     = 'www.mangainn.net'
 pusher   = new PushBullet(settings.pushbullet.api_key)
 
 

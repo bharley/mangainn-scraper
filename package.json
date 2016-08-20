@@ -1,7 +1,7 @@
 {
   "name": "mangainn-scraper",
   "version": "1.0.0",
-  "description": "Scrapes a mangainn.me page for new releases",
+  "description": "Scrapes a mangainn.net page for new releases",
   "main": "scraper.coffee",
   "scripts": {
     "start": "coffee scraper.coffee",
